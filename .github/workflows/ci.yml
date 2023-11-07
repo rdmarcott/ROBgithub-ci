@@ -34,7 +34,7 @@ jobs:
           configuration: test/phpunit.xml
           args: --coverage-text
                 
-  # this job will deploy our code to our EC2 instance
+  # this job will deploy our code to our EC2 instance!
   deploy:
     name: Deploy to EC2 on master branch push
     runs-on: ubuntu-latest
