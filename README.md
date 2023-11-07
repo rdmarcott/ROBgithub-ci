@@ -166,7 +166,7 @@ deploy:
   name: Deploy to EC2 on master branch push
   runs-on: ubuntu-latest
   needs: build-test  # This ensures the "deploy" job depends on "build-test" job
-  if: success()     # This ensures "deploy" job runs only if "build-test" is successful
+  if: success()     # This ensures "deploy" job runs only if "build-test" is successful!
   steps:
     - name: Checkout the files
       uses: actions/checkout@v3
